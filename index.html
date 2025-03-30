@@ -3,22 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Project</title>
+    <title>Ben November | Personal Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My GitHub Pages Project</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">BN</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ben November</h1>
+                <h2>Software Developer & Designer</h2>
+                <p>Crafting digital experiences that make a difference</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>About This Project</h2>
-            <p>This is a simple GitHub Pages project to demonstrate the basic structure of a webpage.</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/profile.jpg" alt="Ben November" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm Ben, a passionate software developer with expertise in web development and UI/UX design. With 5+ years of experience, I focus on creating intuitive and efficient digital solutions.</p>
+                        <p>My journey began with a Computer Science degree from State University, followed by roles at innovative technology companies where I've contributed to projects that impact thousands of users.</p>
+                        <p>When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new tech.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack online shopping solution with React, Node.js, and MongoDB</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>A productivity tool built with Vue.js and Firebase</p>
+                            <div class="project-tags">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>CSS Grid</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project3.jpg" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>Real-time weather data visualization using JavaScript and Weather API</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                                <span>Chart.js</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Front-end</h3>
+                        <ul class="skill-list">
+                            <li>HTML5/CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React</li>
+                            <li>Vue.js</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Back-end</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Python</li>
+                            <li>RESTful APIs</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <ul class="skill-list">
+                            <li>Git/GitHub</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                            <li>Docker</li>
+                            <li>AWS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>Interested in working together? Feel free to reach out through any of the channels below.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:hello@bennovember.com">hello@bennovember.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 My GitHub Pages Project</p>
+        <div class="container">
+            <p>&copy; 2023 Ben November. All rights reserved.</p>
+        </div>
     </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
